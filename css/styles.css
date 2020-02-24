@@ -71,7 +71,7 @@ nav ul li:hover{
 
 
 @media screen and (max-width: 700px){
- nav ul {
+ nav ul,.grid_container{
 		flex-direction: column;
 	}}
 
@@ -89,13 +89,12 @@ main {
 
 .grid_container{
 	 background-color: black;
-	 display: grid;
-	 
-	 grid-gap: 30px;
-	 grid-template-columns: repeat(auto-fill,minmax(450px,1fr));
+	 display: flex;
+	 justify-content:center;
 	
-
 }
+
+
 
 .box >img{
 	width: 100%;
@@ -106,7 +105,7 @@ main {
 	padding: 100px;
 	color:#17A589;
 	font-size:20px;
-	
+
 
 }
 .box img{
@@ -131,6 +130,10 @@ main {
 		justify-content: center;
 
 
+
+}
+.image_container .image_box{
+	padding:20px;
 }
 
 
@@ -140,7 +143,7 @@ main {
 /* Style for footer specifies font size, text alignment, and top margin */
 footer{
 	padding: 40px;
-	font-size: 40px;
+	font-size: 20px;
 	font-family: sans-serif;
 	background-color:  #bfbfbf;
 	text-align: center;
